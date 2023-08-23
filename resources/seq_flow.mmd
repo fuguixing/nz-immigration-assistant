@@ -1,0 +1,12 @@
+sequenceDiagram
+    participant U as User
+    participant A as AIAgent
+    participant C as ChatInterface
+    U->>A: ask question
+    A->>U: answer question
+    U->>A: request immigration plan
+    A->>U: create immigration plan
+    U->>C: send message
+    C->>A: forward message
+    A->>C: respond to message
+    C->>U: display message
